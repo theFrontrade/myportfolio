@@ -375,8 +375,8 @@ header{
     }
     .language_div{
         width: 90%;
-        height: 50vh;
-        padding: 40px 5%;
+        height: 40vh;
+        padding: 20px 5%;
         margin: 0;
     }
     
@@ -449,12 +449,12 @@ header{
         width: 90%;
     }
     .contacts_sub_div input{
-        width: 250px;
+        width: 80%;
         margin: 20px 0;
         
     }
     .contacts_sub_div textarea{
-        width: 250px;
+        width: 90%;
         height: 50px;   
     }
     .contacts_sub_div button{
