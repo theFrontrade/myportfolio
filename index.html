@@ -12,12 +12,25 @@
 
 <body>
     <header>
-        <div class="header_container">
+        <div class="header_container" id="home">
             <div class="header_sub_container">
-                <p>Home</p>
-                <p>Works</p>
-                <p>Testimonial</p>
-                <p>Contact Me</p>
+                <p id="p_home">Home</p>
+                <p id="p_works">Works</p>
+                <p id="p_testimonial">Testimonial</p>
+                <p id="p_contact">Contact Me</p>
+            </div>
+            <div class="mobile_sign">
+                <button id="mobile_header_button"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+        <div class="mobile_head_div" id="mobile_head">
+            <i class="fas fa-times cancel_mobile" id="cancel_mobile_header"></i>
+    
+            <div class="mobile_header_sub_container">
+                <p id="p_mobile_home">Home</p>
+                <p id="p_mobile_works">Works</p>
+                <p id="p_mobile_testimonial">Testimonial</p>
+                <p id="p_mobile_contact">Contact Me</p>
             </div>
         </div>
     </header>
@@ -45,7 +58,7 @@
                     <button>REACT</button>
                 </div>
             </div>
-            <div class="main_sub_container_2">
+            <div class="main_sub_container_2" id="case_study_container">
                 <div class="case_study_div">
                     <p>Case Study</p>
                     <h5>Solving user & business problems since last 15+ years.Lorem ipsum dolor sit amet, consectetur
@@ -106,7 +119,7 @@
                     </div>
                 </div>
             </div>
-            <div class="main_sub_container_3">
+            <div class="main_sub_container_3" id="testimonial_container">
                 <div class="testimonials_head_div">
                     <p>Testimonials</p>
                     <span>These are testiomonies from other developers like me</span>
@@ -150,7 +163,7 @@
     <footer>
         <div class="footer_div">
             <div class="footer_sub_div">
-                <div class="contact_div">
+                <div class="contact_div" id="contact_container">
                     <div class="contacts_sub_div">
                         <p>Contact Me</p>
                         <input type="text" placeholder="Input Your Name">
@@ -178,6 +191,39 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.getElementById('p_works').addEventListener('click',()=>{
+            document.getElementById('case_study_container').scrollIntoView()
+        })
+        document.getElementById('p_testimonial').addEventListener('click',()=>{
+            document.getElementById('testimonial_container').scrollIntoView()
+        })
+        document.getElementById('p_contact').addEventListener('click',()=>{
+            document.getElementById('contact_container').scrollIntoView()
+        })
+        document.getElementById('mobile_header_button').addEventListener('click',()=>{
+            document.getElementById('mobile_head').setAttribute('style','display:block')
+        })
+        document.getElementById('cancel_mobile_header').addEventListener('click',()=>{
+            document.getElementById('mobile_head').setAttribute('style','display:none')
+        })
+        document.getElementById('p_mobile_home').addEventListener('click',()=>{
+            document.getElementById('mobile_head').setAttribute('style','display:none')
+            document.getElementById('home').scrollIntoView()
+        })
+        document.getElementById('p_mobile_works').addEventListener('click',()=>{
+            document.getElementById('mobile_head').setAttribute('style','display:none')
+            document.getElementById('case_study_container').scrollIntoView()
+        })
+        document.getElementById('p_mobile_testimonial').addEventListener('click',()=>{
+            document.getElementById('mobile_head').setAttribute('style','display:none')
+            document.getElementById('testimonial_container').scrollIntoView()
+        })
+        document.getElementById('p_mobile_contact').addEventListener('click',()=>{
+            document.getElementById('mobile_head').setAttribute('style','display:none')
+            document.getElementById('contact_container').scrollIntoView()
+        })
+    </script>
 </body>
 
 </html>
