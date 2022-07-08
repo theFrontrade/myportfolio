@@ -72,8 +72,11 @@ header{
     color: #ffff;
 
 }
+.sub_container1_img{
+    width: 30%;
+}
 .sub_container1_img img{
-    height: 20rem;
+    width: 70%;
     border-radius: 150px;
 }
 .language_div{
@@ -356,12 +359,18 @@ header{
         padding: 30px 0;
         flex-direction: column-reverse;
     }
+    .sub_container1_img{
+        width: 55%;
+    }
     .sub_container1_img img{
-        height: 12rem;
+        width: 100%;
     }
     .sub_container1_text{
         width: 90%;
         text-align: center;
+    }
+    .sub_container1_text a{
+        margin: 15px 0;
     }
     .language_div{
         width: 90%;
