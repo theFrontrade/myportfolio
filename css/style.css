@@ -443,8 +443,12 @@ header{
         flex-direction: column-reverse;
         
     }
+    .contacts_sub_div{
+        width: 90%;
+    }
     .contacts_sub_div input{
         width: 250px;
+        margin: 20px 0;
         
     }
     .contacts_sub_div textarea{
