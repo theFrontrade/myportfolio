@@ -352,7 +352,7 @@ header{
         height: auto;
     }
     .main_sub_container1{
-        height: auto;
+        height: 80vh;
         padding: 30px 0;
         flex-direction: column-reverse;
     }
@@ -365,16 +365,18 @@ header{
     }
     .language_div{
         width: 90%;
-        padding: 0 5%;
+        padding: 20px 5%;
         margin: 0;
     }
+    
     .language_div p {
+
         text-align: center;
         font-size: 1.2rem;
 
     }
     .language_sub_div{
-        width: 70%;
+        width: 100%;
         justify-content: space-evenly;
         flex-wrap: wrap;
         /* justify-content: center;
