@@ -12,25 +12,29 @@
 
 <body>
     <header>
-        <div class="header_container" id="home">
-            <div class="header_sub_container">
-                <p id="p_home">Home</p>
-                <p id="p_works">Works</p>
-                <p id="p_testimonial">Testimonial</p>
-                <p id="p_contact">Contact Me</p>
+        <div class="header_div">
+            
+            <div class="header_container" id="home">
+                <img src="./img/computer.png" class="header_img"  alt="" srcset="">
+                <div class="header_sub_container">
+                    <p id="p_home">Home</p>
+                    <p id="p_works">Works</p>
+                    <p id="p_testimonial">Testimonial</p>
+                    <p id="p_contact">Contact Me</p>
+                </div>
+                <div class="mobile_sign">
+                    <button id="mobile_header_button"><i class="fas fa-bars"></i></button>
+                </div>
             </div>
-            <div class="mobile_sign">
-                <button id="mobile_header_button"><i class="fas fa-bars"></i></button>
-            </div>
-        </div>
-        <div class="mobile_head_div" id="mobile_head">
-            <i class="fas fa-times cancel_mobile" id="cancel_mobile_header"></i>
-    
-            <div class="mobile_header_sub_container">
-                <p id="p_mobile_home">Home</p>
-                <p id="p_mobile_works">Works</p>
-                <p id="p_mobile_testimonial">Testimonial</p>
-                <p id="p_mobile_contact">Contact Me</p>
+            <div class="mobile_head_div" id="mobile_head">
+                <i class="fas fa-times cancel_mobile" id="cancel_mobile_header"></i>
+
+                <div class="mobile_header_sub_container">
+                    <p id="p_mobile_home">Home</p>
+                    <p id="p_mobile_works">Works</p>
+                    <p id="p_mobile_testimonial">Testimonial</p>
+                    <p id="p_mobile_contact">Contact Me</p>
+                </div>
             </div>
         </div>
     </header>
@@ -43,7 +47,7 @@
                         here is my portfolio website.
                         Here you’ll learn about my journey
                         as a software developer.</p>
-                    <a href="./img/resume.docx" download>Download Resume</a>
+                    <a href="./img/CV.docx" download>Download Resume</a>
                 </div>
                 <div class="sub_container1_img">
                     <img src="./img/myimg8.jpg" alt="" srcset="">
@@ -88,7 +92,8 @@
                         <h5>A landing page for a proper E Commerce website
                             <br> Currntly working on using Api to all adding to Cart and others
                         </h5>
-                        <a href="http://samcommerce.netlify.app" target="_blank" class="case_study_a">View Case Study</a>
+                        <a href="http://samcommerce.netlify.app" target="_blank" class="case_study_a">View Case
+                            Study</a>
                     </div>
 
                 </div>
@@ -99,7 +104,8 @@
                         <h5>An average template for a good landing page
                             <br>A Suitable Landing page for a websites that helps others manages their websites
                         </h5>
-                        <a href="http://myanalytics.netlify.app" target="_blank" class="case_study_a">View Case Study</a>
+                        <a href="http://myanalytics.netlify.app" target="_blank" class="case_study_a">View Case
+                            Study</a>
                     </div>
                     <div class="project_sub_div1">
                         <img src="./img/analytics.jpg" alt="" srcset="">
@@ -151,11 +157,21 @@
                             Aut sint dolorem itaque ipsa ex cum quasi, doloremque consequatur rerum?
                         </p>
                         <div>
-                            <img src="./img/testifier_1.jpg"  class="test_img" alt="">
+                            <img src="./img/testifier_1.jpg" class="test_img" alt="">
                             <span>Samson Onifade</span>
                         </div>
                     </div>
-                    
+                    <div class="testimonies_div">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Obcaecati porro animi quod, ex voluptas quasi. Similique laborum ex reiciendis.
+                            Aut sint dolorem itaque ipsa ex cum quasi, doloremque consequatur rerum?
+                        </p>
+                        <div>
+                            <img src="./img/omens.jpg" class="test_img" alt="">
+                            <span>Martins Omenudo</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -174,16 +190,18 @@
                         <span>
                             <a href="mailto:Sadeniyi016@gmail.com"><i class="fas fa-envelope"></i></a>
                             <a href="tel:+8175547226"><i class="fab fa-whatsapp"></i></a>
-                            <a href="http://www.facebook.com/samuel.oyeniran.7758" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="http://www.facebook.com/samuel.oyeniran.7758" target="_blank"><i
+                                    class="fab fa-facebook"></i></a>
                             <a href="http://" target="_blank"><i class="fab fa-twitter"></i></a>
                             <a href="http://github.com/localman-1" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="http://www.linkedin.com/in/samuel-adeniyi-86aa47244/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="http://www.linkedin.com/in/samuel-adeniyi-86aa47244/" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a>
                         </span>
                     </div>
                     <div class="img_div">
                         <img src="./img/Contact us.gif" alt="" srcset="">
                     </div>
-                    
+
                 </div>
             </div>
             <div class="footer_last_div">
@@ -192,35 +210,35 @@
         </div>
     </footer>
     <script>
-        document.getElementById('p_works').addEventListener('click',()=>{
+        document.getElementById('p_works').addEventListener('click', () => {
             document.getElementById('case_study_container').scrollIntoView()
         })
-        document.getElementById('p_testimonial').addEventListener('click',()=>{
+        document.getElementById('p_testimonial').addEventListener('click', () => {
             document.getElementById('testimonial_container').scrollIntoView()
         })
-        document.getElementById('p_contact').addEventListener('click',()=>{
+        document.getElementById('p_contact').addEventListener('click', () => {
             document.getElementById('contact_container').scrollIntoView()
         })
-        document.getElementById('mobile_header_button').addEventListener('click',()=>{
-            document.getElementById('mobile_head').setAttribute('style','display:block')
+        document.getElementById('mobile_header_button').addEventListener('click', () => {
+            document.getElementById('mobile_head').setAttribute('style', 'display:block')
         })
-        document.getElementById('cancel_mobile_header').addEventListener('click',()=>{
-            document.getElementById('mobile_head').setAttribute('style','display:none')
+        document.getElementById('cancel_mobile_header').addEventListener('click', () => {
+            document.getElementById('mobile_head').setAttribute('style', 'display:none')
         })
-        document.getElementById('p_mobile_home').addEventListener('click',()=>{
-            document.getElementById('mobile_head').setAttribute('style','display:none')
+        document.getElementById('p_mobile_home').addEventListener('click', () => {
+            document.getElementById('mobile_head').setAttribute('style', 'display:none')
             document.getElementById('home').scrollIntoView()
         })
-        document.getElementById('p_mobile_works').addEventListener('click',()=>{
-            document.getElementById('mobile_head').setAttribute('style','display:none')
+        document.getElementById('p_mobile_works').addEventListener('click', () => {
+            document.getElementById('mobile_head').setAttribute('style', 'display:none')
             document.getElementById('case_study_container').scrollIntoView()
         })
-        document.getElementById('p_mobile_testimonial').addEventListener('click',()=>{
-            document.getElementById('mobile_head').setAttribute('style','display:none')
+        document.getElementById('p_mobile_testimonial').addEventListener('click', () => {
+            document.getElementById('mobile_head').setAttribute('style', 'display:none')
             document.getElementById('testimonial_container').scrollIntoView()
         })
-        document.getElementById('p_mobile_contact').addEventListener('click',()=>{
-            document.getElementById('mobile_head').setAttribute('style','display:none')
+        document.getElementById('p_mobile_contact').addEventListener('click', () => {
+            document.getElementById('mobile_head').setAttribute('style', 'display:none')
             document.getElementById('contact_container').scrollIntoView()
         })
     </script>
