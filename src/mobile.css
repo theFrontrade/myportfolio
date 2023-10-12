@@ -1,0 +1,133 @@
+/* PortFolio Mobile */
+
+@media screen and (max-width:728px) {
+    /* Header */
+    header{
+        width:90%;
+        padding:2% 5%;
+    }
+    .navigations{
+        display: none;
+    }
+
+    .breadcrumb-area{
+        width:95%;
+        padding:0% 2.5%;
+    }
+    .banner{
+        flex-direction: column;
+        height:auto;
+    }
+    .banner-text{
+        width:90%;
+        margin:5rem 0 0rem 0 ;
+    }
+    .banner-text h1{
+        line-height:3rem;
+    }
+    .banner-img{
+        width:90%;
+        margin: 0 auto;
+    }
+    .banner-img img{
+        width:100%;
+    }
+    .contact{
+        margin:10rem 0;
+    }
+    .contact h1{
+        width:96%;
+        padding:0 2%;
+        font-size:2.5rem;
+        line-height: 4rem;
+        text-align: center;
+    } 
+    .contact p{
+        width:96%;
+        padding:2%;
+        font-size:1.5rem;
+        line-height:2.3rem;
+    }
+    .about > div{
+        flex-direction: column;
+    }
+    .about > div > div{
+        width:96%;
+        padding:2%;
+        margin:2rem 0;
+    }
+    .techArray-item{
+        margin:1rem 1%;
+    }
+    .techArray-item div{
+        height:2.5rem;
+    }
+    .projects{
+        margin-bottom:10rem;
+        padding:2rem 5%;
+    }
+    .project-lone{
+        position:relative;
+        flex-direction: column;
+        gap:40px;
+        margin:6rem 0 0 0;
+    }
+    .reversed {
+        flex-direction:column;
+    }
+    .project-lone img {
+        width:100%;
+        height:auto;
+        object-fit: cover;
+        filter:brightness(0.6)
+    }
+    .project-lone > div{
+        width:100%;
+        margin:0rem 0 0 0;
+    }
+    .project-lone > div > div{
+        max-width:95%;
+    }
+    .project-lone button{
+        padding:4% 7%;
+    }
+    .comment-card{
+        width:100%;
+        margin:5% 0;
+    }
+    .comment-card .flex{
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .comment-card .flex > img{
+        width:4rem;
+        height:4rem;
+    }
+    .little-text-head{
+        font-size:20px;
+      }
+
+    /* Footer */
+    footer{
+        width:90%;
+        padding:2% 5%;
+    }
+    footer > .flex, .footer-right > .flex{
+        flex-direction:column
+    }
+    .footer-left, .footer-center, .footer-right{
+        padding:0% 2.5%;
+        width:95%;
+        text-align: center;
+    }
+    .social{
+        margin:2rem 0;
+    }
+    .footer-right button{
+        width:63%;
+        padding:4% 5%;
+        margin:2rem 0;
+    }
+}
