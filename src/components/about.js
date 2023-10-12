@@ -1,5 +1,5 @@
 import React from "react";
-import { WidgetsRounded } from "@material-ui/icons";
+// import { WidgetsRounded } from "@material-ui/icons";
 import { GitHub, LinkedIn, Twitter, LocalPhone, MailOutline, Code, Brush, Facebook } from "@material-ui/icons";
 import FadeIn from './fadeIn'
 import * as Icon from 'react-feather'
