@@ -1,7 +1,7 @@
 import React from "react";
 // import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { GitHub, Globe } from "react-feather";
+import { GitHub, ArrowRight } from "react-feather";
 import * as Icon from "react-feather";
 import { Techs } from "./about";
 import { Brush, Code } from "@material-ui/icons";
@@ -71,9 +71,9 @@ export const ProjectCard = ({
         <Carousel
           swipeable={true}
           draggable={true}
-          autoPlaySpeed={3000}
-          transitionDuration={2000}
-          infinite
+          autoPlaySpeed={1000}
+          transitionDuration={1000}
+          infinite = {true}
           responsive={responsive}
           autoPlay={true}
           containerClass="carousel_container"
@@ -85,16 +85,24 @@ export const ProjectCard = ({
 
         <div className="projectDisplayWrap">
           <div className="project_display">
-            <div className="project_link">
-              <a href={githubLink} target="_blank" rel="noreferrer">
-                <GitHub size={30} />
-              </a>
-            </div>
-            <div className="project_link_github">
-              <a href={link} target="_blank" rel="noreferrer">
-                <Globe size={30} />
-              </a>
-            </div>
+            {githubLink ? (
+              <div className="project_link">
+                <a href={githubLink} target="_blank" rel="noreferrer">
+                  <GitHub size={35} />
+                </a>
+              </div>
+            ) : (
+              <div></div>
+            )}
+            {link ? (
+              <div className="project_link_github">
+                <a href={link} target="_blank" rel="noreferrer">
+                  <ArrowRight size={35} />
+                </a>
+              </div>
+            ) : (
+              <div></div>
+            )}
           </div>
 
           <div>
@@ -122,6 +130,150 @@ export const ProjectCard = ({
 };
 
 const projectList = [
+  {
+    id: "9",
+    name: "Afrotrips",
+    desc: "AfroTrips is a website which handle everything from accommodations to transportation, ensuring your adventure is hassle-free and packed with unforgettable moments. Community of Travelers, ",
+    img: [
+      "images/project/afrotrips.png",
+      "images/project/afrotrips1.png",
+      "images/project/afrotrips2.png",
+      "images/project/afrotrips3.png",
+    ],
+    tecnologies: [
+      {
+        id: "3",
+        name: "Js",
+        icon: Icon.Hash,
+        nameDisplay: true,
+      },
+      {
+        id: "4",
+        name: "React",
+        icon: Code,
+        nameDisplay: true,
+      },
+      {
+        id: "6",
+        name: "Tailwind",
+        icon: Brush,
+        nameDisplay: true,
+      },
+      {
+        id: "7",
+        name: "Next Js",
+        icon: Icon.Hash,
+        nameDisplay: true,
+      },
+      {
+        id: "11",
+        name: "TS",
+        icon: Code,
+        nameDisplay: true,
+      },
+    ],
+  },
+  {
+    id: "10",
+    name: "DevAsk",
+    desc: " Devask is a website that  helps you get answers to your technical questions immediately. You also get rewarded when you provide correct answers to questions. ",
+    img: [
+      "images/project/DevAsk1.png",
+      "images/project/DevAsk.png",
+      "images/project/DevAsk2.png",
+    ],
+    link: "https://devask.hng.tech/#/",
+    tecnologies: [
+      {
+        id: "3",
+        name: "Js",
+        icon: Icon.Hash,
+        nameDisplay: true,
+      },
+      {
+        id: "4",
+        name: "React",
+        icon: Code,
+        nameDisplay: true,
+      },
+      {
+        id: "2",
+        name: "CSS",
+        icon: Brush,
+        nameDisplay: true,
+      },
+
+
+    ],
+  },
+  {
+    id: "11",
+    name: "Zurichat",
+    desc: " ZuriChat is an open source workspace app that provides the opportunity for people to network, collaborate, educate and learn remotely. It allows people to take their classroom everywhere, make learning fun, stay engaged and inspired with the virtual lounge and games. One of its unique features are the variety of plugins designed to add function… ",
+    img: [
+      "images/project/zurichat.jpeg",
+      "images/project/zurichat3.jpeg",
+      "images/project/zurichat2.jpeg",
+    ],
+    link: "https://zuri.chat/#/",
+    tecnologies: [
+      {
+        id: "3",
+        name: "Js",
+        icon: Icon.Hash,
+        nameDisplay: true,
+      },
+      {
+        id: "4",
+        name: "React",
+        icon: Code,
+        nameDisplay: true,
+      },
+      {
+        id: "2",
+        name: "CSS",
+        icon: Brush,
+        nameDisplay: true,
+      },
+
+
+    ],
+  },
+  {
+    id: "12",
+    name: "Metabnb",
+    desc: " One of the task from hng intership  ",
+    img: [
+      "images/project/metabnb.png",
+      "images/project/metabnb2.png",
+      "images/project/metabnb4.png",
+      "images/project/metabnb3.png",
+    ],
+    link: "https://metabnb-hng-task3.netlify.app/",
+    githubLink: "https://github.com/theFrontrade/ZuriTask",
+    tecnologies: [
+      {
+        id: "3",
+        name: "Js",
+        icon: Icon.Hash,
+        nameDisplay: true,
+      },
+      {
+        id: "4",
+        name: "React",
+        icon: Code,
+        nameDisplay: true,
+      },
+      {
+        id: "2",
+        name: "CSS",
+        icon: Brush,
+        nameDisplay: true,
+      },
+
+
+    ],
+  },
   {
     id: "1",
     name: "Currency  Converter",
@@ -162,8 +314,10 @@ const projectList = [
       "images/project/e_commerce2.png",
       "images/project/e_commerce3.png",
       "images/project/e_commerce4.png",
+      "images/project/e_commerce5.png",
     ],
-    link: "https://otaillaw.netlify.app",
+    link: "https://samcommerce.netlify.app/",
+    githubLink: "https://github.com/theFrontrade/e-commerce",
     tecnologies: [
       {
         id: "1",
@@ -224,11 +378,44 @@ const projectList = [
     desc: "NFt Landing Page is a  responsive Landing Page built with react Awesome design suitable for Nft project",
     img: [
       "images/project/nftlanding.jpg",
-      "images/project/analytics2.png",
-      "images/project/analytics3.png",
-      "images/project/analytics4.png",
+      "images/project/nft1.png",
+      "images/project/nft2.png",
     ],
     link: "http://snftland.netlify.app/",
+    githubLink: "https://github.com/theFrontrade/Analytics",
+    tecnologies: [
+      {
+        id: "1",
+        name: "HTML",
+        icon: icon.Code,
+        nameDisplay: true,
+      },
+      {
+        id: "2",
+        name: "CSS",
+        icon: Brush,
+        nameDisplay: true,
+      },
+      {
+        id: "3",
+        name: "Js",
+        icon: Icon.Hash,
+        nameDisplay: true,
+      },
+      {
+        id: "4",
+        name: "React",
+        icon: Code,
+        nameDisplay: true,
+      },
+    ],
+  },
+  {
+    id: "5",
+    name: "User Search Filter",
+    desc: "User Search filter is website that allows searching of users gotten from Api and also checking the user details",
+    img: ["images/project/userfilter1.png", "images/project/userfilter2.png"],
+    link: "https://suser.netlify.app/",
     githubLink: "https://github.com/theFrontrade/Analytics",
     tecnologies: [
       {

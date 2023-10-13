@@ -235,5 +235,11 @@ export const TechList = [
         icon: Code,
         nameDisplay: true
     },
+    {
+        id: "12",
+        name: "Styled Components",
+        icon: Code,
+        nameDisplay: true
+    },
 
 ]

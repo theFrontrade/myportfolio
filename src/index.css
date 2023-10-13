@@ -17,7 +17,7 @@
   --primary-bg: #161616;
   --secondary-bg: #161616;
   --tertiary-bg: rgb(138, 180, 248);
-  --othertertiary-bg: #54D99D;
+  --othertertiary-bg: #54d99d;
   --important-text: rgba(255, 255, 255, 100%);
   --normal-text: rgba(255, 255, 255, 80%);
   --icon-text: rgba(255, 255, 255, 60%);
@@ -142,7 +142,7 @@ p {
   font-weight: 600;
 }
 button {
-  background: #54D99D;
+  background: #54d99d;
   border: none;
   padding: 5% 10%;
   color: #161616;
@@ -313,20 +313,33 @@ header {
   width: 100%;
   object-fit: cover;
   filter: brightness(0.6);
+  border-radius: 8px;
 }
 .carousel_container {
   width: 55%;
-  height: 50vh;
+  height: auto;
   border-radius: 5px;
-  border: 3px solid var(--tertiary-bg);
+  /* border: 3px solid var(--tertiary-bg); */
   /* background-color: red; */
 }
+.carousel_container button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 10px;
+  color: var(--othertertiary-bg);
+
+  border: 1px solid var(--othertertiary-bg);
+}
+
 .projectDisplayWrap {
   width: 40%;
   padding: 0;
   display: flex;
   flex-direction: column;
-
 }
 .project_display {
   display: flex;
@@ -341,24 +354,25 @@ header {
   line-height: 1.5rem;
 }
 .project_link {
-  width: 30px;
-  height: 30px;
+  border-radius: 30px;
+  color: var(--othertertiary-bg);
+  margin: 0 0 1rem 0;
+  font-weight: 300;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
-  color: var(--othertertiary-bg);
-  margin: 0 0 1rem 0;
+  padding: 10px;
 }
 .project_link_github {
-  width: 30px;
-  height: 30px;
+  border-radius: 30px;
+  color: var(--othertertiary-bg);
+  margin: 0 0 1rem 0;
+  border: 2px solid var(--othertertiary-bg);
+  font-weight: 300;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
-  color: var(--othertertiary-bg);
-  margin: 0 0 1rem 0;
+  padding: 5px;
 }
 .project-lone button {
   padding: 5%;
