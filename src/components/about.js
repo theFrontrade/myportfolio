@@ -171,13 +171,6 @@ export const social = [
         link: 'tel:08175547226',
         nameDisplay: true
     },
-    {
-        id: '6',
-        name: 'Facebook',
-        icon: Facebook,
-        link: 'http://www.facebook.com/samuel.oyeniran.7758',
-        nameDisplay: true
-    },
    
 ]
 export const TechList = [
