@@ -22,7 +22,7 @@ const Banner = () => {
                         <h4>Hi, I'm Samuel Adeniyi ( theFrontrade ) </h4>
                         <h1>Software Engineer, Front End Developer,</h1>
                         
-                        <a href="SamuelAdeniyiResume.pdf" download>
+                        <a href="SamuelAdeniyiResume.docx" download>
                             <button>Download Resume</button>
                         </a>
                     </div>

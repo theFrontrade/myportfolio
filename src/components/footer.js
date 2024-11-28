@@ -41,7 +41,7 @@ const Footer = () => {
                 </a>
               </div>
               <button>
-                <a href="SamuelAdeniyiResume.pdf" rel="noreferrer" download>
+                <a href="SamuelAdeniyiResume.docx" rel="noreferrer" download>
                   Download Resume
                 </a>
               </button>
